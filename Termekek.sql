@@ -36,7 +36,7 @@ CREATE TABLE `F_Nyomtato` (
   CONSTRAINT `Termek_ny_pk` FOREIGN KEY (`modell`) REFERENCES `F_Termek` (`modell`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO `Termek` VALUES
+INSERT INTO `F_Termek` VALUES
 ('A',1001,'pc'),
 ('A',1002,'pc'),
 ('A',1003,'pc'),
@@ -68,7 +68,7 @@ INSERT INTO `Termek` VALUES
 ('H',3006,'nyomtato'),
 ('H',3007,'nyomtato');
 
-INSERT INTO `PC` VALUES
+INSERT INTO `F_PC` VALUES
 (1001,2.66,1024,250,2114),
 (1002,2.10,512,250,995),
 (1003,1.42,512,80,478),
@@ -83,7 +83,7 @@ INSERT INTO `PC` VALUES
 (1012,2.80,1024,160,649),
 (1013,3.06,512,80,529);
 
-INSERT INTO `Laptop` VALUES
+INSERT INTO `F_Laptop` VALUES
 (2001,2.00,2048,240,20.1,3673),
 (2002,1.73,1024,80,17.0,949),
 (2003,1.80,512,60,15.4,549),
@@ -95,7 +95,7 @@ INSERT INTO `Laptop` VALUES
 (2009,1.60,512,80,14.1,680),
 (2010,2.00,2048,160,15.4,2300);
 
-INSERT INTO `Nyomtato` VALUES
+INSERT INTO `F_Nyomtato` VALUES
 (3001,'igen','tintasugaras',99),
 (3002,'nem','lézer',239),
 (3003,'igen','lézer',899),
